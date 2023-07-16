@@ -1,0 +1,17 @@
+#!/bin/bash
+echo usage : cx -a 
+source $(dirname "$0")/lst
+
+#Kpath='/root/FYEO/keys/'
+echo Found : $(grep -i $1 ~/lst | cut -d";" -f1 | head -n 1)
+echo
+read -p "DO you really wanna connext? (y/n)" conf 
+if [ "$conf" == "y" ] || [ "$conf" == "Y" ];
+then
+	echo;entry=$Kpath$(grep -i "$1" ~/lst | cut -d";" -f2 | head -n 1 )
+	ssh -i $entry
+else
+   echo Not Connecting
+fi
+
+echo

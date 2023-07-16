@@ -1,0 +1,5 @@
+Kpath=/root/dir/of/my/keys/
+#e.g. /home/loluser/.ssh/
+
+#NAMEOFMYSERVER;[subfolderof]/[mykey];userwhatever@myserver.org
+#NAMEOFANOTHERSERVER;[mykey];userwhatever@anotherserver.org
